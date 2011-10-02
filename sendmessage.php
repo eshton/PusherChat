@@ -12,7 +12,7 @@ require('Pusher-PHP/lib/Pusher.php');
 
 $message = $_GET['message'];
 
-if (!$event || !$message) {
+if (!$message) {
     echo json_encode(array('result' => 'wrong parameter'));
     return;
 }
